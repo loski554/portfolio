@@ -243,6 +243,7 @@ button.btnProjects {
     align-self: self-start;
     font-size: 1rem;
     border: none;
+    color: #111111;
     background: var(--accent-color);
     padding: 5px;
 }
