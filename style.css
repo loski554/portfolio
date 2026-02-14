@@ -1,0 +1,330 @@
+/* FONTS IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@font-face {
+    font-family: 'Menlo';
+    src: url(./assets/fonts/Menlo-Regular.ttf);
+}
+
+/* BASIC SETTINGS */
+:root {
+    --base-color: #111111;
+    --base-variant: #27272a;
+    --text-color: #eaeaea;
+    --primary-color: #5478fb2c;
+    --accent-color: #5478fb;
+    --lang-bg: #27272a;
+    --lang-color: #717171;
+    /* --primary-color: #8cf2a62c;
+    --accent-color: #8CF2A6; */
+}
+.lightmode {
+    --base-color: #eaeaea;
+    --base-variant: #9797978f;
+    --text-color: #111111;
+    --primary-color: #5478fb2c;
+    --accent-color: #5478fb;
+    --lang-bg: #c8c8c8;
+    --lang-color: #484848;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: var(--base-color);
+    color: var(--text-color);
+}
+
+/* THEME SWITCH BUTTON */
+#theme-switch svg {
+    fill: var(--text-color);
+}
+button#theme-switch svg:last-child {
+    display: none;
+}
+.darkmode #theme-switch svg:first-child {
+    display: none;
+}
+.darkmode #theme-switch svg:last-child {
+    display: block;
+}
+
+/* HEADER */
+header {
+    font-family: 'Menlo', sans-serif;
+    position: relative;
+    display: flex;
+    width: fit-content;
+    height: 4rem;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(4px);
+    border-bottom: 1px solid var(--accent-color);
+    z-index: 10;
+}
+nav {
+    display: flex;
+    height: 100%;
+}
+nav li {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6rem;
+    height: 100%;
+    transition: all 0.4s ease-out;
+}
+nav button {
+    font-family: 'Menlo';
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 100%;
+    transition: all 0.4s ease-out;
+    background: none;
+    color: var(--text-color);
+    font-size: 1rem ;
+}
+nav button:hover {
+    margin-top: 5px;
+}
+nav li:hover {
+    margin-top: 5px;
+}
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+/* SECTION MAIN */
+section.main {
+    display: flex;
+    flex-direction: column; 
+    display: flex;
+    width: auto;
+    border: 1px solid var(--base-variant);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 5rem 1rem 2rem 1rem;
+    max-width: 50rem;
+    gap: 3.5rem;
+}
+.main span {
+    color: var(--accent-color);
+}
+.main .middle svg {
+    fill: var(--accent-color);
+}
+.main p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* DIV INFO */
+.info {
+    text-align: justify;
+}
+.info h1 {
+    font-size: 2.5rem;
+}
+.top {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.top .social {
+    display: flex;
+    gap: 5px;
+}
+.top .social .card {
+    cursor: pointer;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+    border: 1px solid var(--base-variant);
+    border-radius: 10px;
+    margin-bottom: 0.2rem;
+}
+.darkmode .card img {
+    filter: invert();
+}
+.middle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.8rem;
+    gap: 3px;
+    /* #8CF2A6 */
+}
+
+/* DIV PROJECTS */
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.projects h1,
+.about h1 {
+    align-self: start;
+    padding: 2px 5px;
+    background: var(--primary-color);
+    font-family: 'Menlo';
+    font-size: 1.5rem;
+}
+.project-card {
+    display: flex;  
+    background-size: cover;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--base-variant);
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.project-card.hidden {
+    display: none;
+}
+.project-card.showing {
+    opacity: 0;
+    transform: translateY(20px);
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    align-items: start;
+    width: 100%;
+}
+.text p {
+    margin-top: 0.5rem;
+}
+a.show {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: #eaeaea;
+    padding: 7px;
+    border-radius: 10px;
+    color: #111111;
+    transition: all 0.3s ease-out;
+}
+a.show:hover {
+    transform: scale(0.97);
+    opacity: 50%;
+}
+button.btnProjects {
+    font-family: 'Open Sans';
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    align-self: self-start;
+    font-size: 1rem;
+    border: none;
+    background: var(--accent-color);
+    padding: 5px;
+}
+button.btnProjects.less {
+    display: none;
+}
+
+/* SECTION ABOUT */
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: justify;
+}
+.language {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.lang {
+    display: flex;
+    gap: 10px;
+}
+.time {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.time svg {
+    fill: var(--lang-color);
+}
+.about button {
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    background: var(--lang-bg);
+    padding: 2px 5px;
+    color: var(--lang-color);
+}
+.about button:hover {
+    text-decoration: underline;
+}
+.about p.english {
+    display: block;
+}
+.about p.french {
+    display: none;
+}
+/*PARTIE RESPONSIVE*/
+
+/*EN DESSOUS DE 1400px*/
+@media (max-width: 1400px) {
+    
+}
+
+/*EN DESSOUS DE 1024px*/
+@media (max-width: 1024px) {
+}
+
+/*EN DESSOUS DE 576px*/
+@media (max-width: 576px) {
+    header {
+        width: 100%;
+        position: fixed;
+        border-bottom: 2px solid var(--accent-color);
+    }
+    section.main {
+    margin: 5rem 0 2rem 0;
+    border: none;
+    }
+    .bottom p {
+        font-size: 1.1rem;
+    }
+    .text p {
+        font-size: 1rem;
+    }
+    .top.info{
+    display: flex;
+    margin-bottom: 2rem;
+    flex-direction: column-reverse;
+    }
+    .about p {
+        font-size: 1rem;
+    }
+}
