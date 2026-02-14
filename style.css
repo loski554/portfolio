@@ -235,6 +235,8 @@ a.show:hover {
     opacity: 50%;
 }
 button.btnProjects {
+    -webkit-appearance: none;
+    appearance: none;
     font-family: 'Open Sans';
     cursor: pointer;
     display: flex;
