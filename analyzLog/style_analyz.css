@@ -242,7 +242,7 @@ a.btnReport svg {
 .time {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 3px;
 }
 .time svg {
     fill: var(--lang-color);

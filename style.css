@@ -90,7 +90,7 @@ nav li {
     height: 100%;
     transition: all 0.4s ease-out;
 }
-nav button {
+nav button.btnNav {
     font-family: 'Menlo';
     border: none;
     cursor: pointer;
@@ -104,12 +104,7 @@ nav button {
     color: var(--text-color);
     font-size: 1rem ;
 }
-nav button:hover {
-    margin-top: 5px;
-}
-nav li:hover {
-    margin-top: 5px;
-}
+
 a {
     text-decoration: none;
     color: var(--text-color);
@@ -272,7 +267,7 @@ button.btnProjects.less {
 .time {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 3px;
 }
 .time svg {
     fill: var(--lang-color);
