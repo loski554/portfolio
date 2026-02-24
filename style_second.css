@@ -208,8 +208,12 @@ ul li::marker {
     gap: 10px;
     text-align: justify;
 }
-.resume p.report {
-    font-size: 0.9rem;
+.resume h1 {
+    align-self: start;
+    padding: 2px 5px;
+    background: var(--primary-color);
+    font-family: 'Menlo';
+    font-size: 1.5rem;
 }
 a.btnReport {
     font-weight: 600;
@@ -222,13 +226,6 @@ a.btnReport {
 }
 a.btnReport svg {
     fill: var(--text-color);
-}
-.resume h1 {
-    align-self: start;
-    padding: 2px 5px;
-    background: var(--primary-color);
-    font-family: 'Menlo';
-    font-size: 1.5rem;
 }
 .language {
     display: flex;
