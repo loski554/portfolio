@@ -9,6 +9,7 @@
 /* BASIC SETTINGS */
 :root {
     --base-color: #111111;
+    --bg-bottom: #1f1f1fc0;
     --base-variant: #27272a;
     --text-color: #eaeaea;
     --primary-color: #5478fb2c;
@@ -118,10 +119,12 @@ a {
 /* SECTION MAIN */
 section.main {
     display: flex;
-    flex-direction: column; 
-    display: flex;
+    flex-direction: column;
     width: auto;
-    border: 1px solid var(--base-variant);
+    border: solid 1px transparent;
+    background:
+        linear-gradient( var(--base-color), var(--base-color)) padding-box,
+        linear-gradient(var(--base-variant), var(--bg-bottom)) border-box;
     border-radius: 10px;
     padding: 20px;
     margin: 5rem 1rem 2rem 1rem;
@@ -186,7 +189,10 @@ section.main {
 
 /* SECTION INFO */
 .info {
-    border: 1px solid var(--base-variant);
+    border: solid 1px transparent;
+    background:
+        linear-gradient( var(--base-color), var(--base-color)) padding-box,
+        linear-gradient(var(--base-variant), var(--bg-bottom)) border-box;
     border-radius: 10px;
     padding: 20px;
     display: flex;

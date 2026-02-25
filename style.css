@@ -9,6 +9,7 @@
 /* BASIC SETTINGS */
 :root {
     --base-color: #111111;
+    --bg-bottom: #1f1f1fc0;
     --base-variant: #27272a;
     --text-color: #eaeaea;
     --primary-color: #5478fb2c;
@@ -116,7 +117,10 @@ section.main {
     flex-direction: column; 
     display: flex;
     width: auto;
-    border: 1px solid var(--base-variant);
+    border: solid 1px transparent;
+    background:
+        linear-gradient( var(--base-color), var(--base-color)) padding-box,
+        linear-gradient(var(--base-variant), var(--bg-bottom)) border-box;
     border-radius: 10px;
     padding: 20px;
     margin: 5rem 1rem 2rem 1rem;
@@ -189,11 +193,13 @@ section.main {
     font-size: 1.5rem;
 }
 .project-card {
-    display: flex;  
-    background-size: cover;
+    display: flex;
     padding: 20px;
     border-radius: 10px;
-    border: 1px solid var(--base-variant);
+    border: solid 1px transparent;
+    background:
+        linear-gradient( var(--base-color), var(--base-color)) padding-box,
+        linear-gradient(var(--base-variant), var(--bg-bottom)) border-box;
     opacity: 1;
     transform: translateY(0);
     transition: opacity 0.8s ease, transform 0.8s ease;
