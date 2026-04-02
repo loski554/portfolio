@@ -15,9 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function loadLanguage(lang) {
-  fetch(`./data/${lang}.json`)
+  fetch(`../data/${lang}.json`)
     .then(res => res.json())
     .then(data => {
+      console.log(data);
       translations = data;
       updateText();
     })
