@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function loadLanguage(lang) {
-  fetch(`portfolio/data/${lang}.json`)
+  fetch("data/" + lang + ".json")
     .then(res => res.json())
     .then(data => {
       console.log(data);
