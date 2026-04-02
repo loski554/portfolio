@@ -327,6 +327,7 @@ button.btnProjects.less {
     nav li,
     nav button.btnNav {width: 5rem;}
     section.main {margin: 5rem 0 2rem 0;}
+    .info {margin-top: 1rem;}
     .social {margin-bottom: 0.9rem;}
     .top.info h1 {font-size: 2.3rem;}
     .bottom p {font-size: 1.2rem;}
