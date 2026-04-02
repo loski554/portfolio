@@ -1,0 +1,65 @@
+<head>
+    <title>Report</title>
+</head>
+
+<html>
+    <body style="color: #eaeaea; background: #111111 ;font-family: sans-serif;">
+        <p class="report">
+                ==================================================<br>
+                RAPPORT D'ANALYSE DES LOGS<br>
+                ==================================================<br>
+                <br>
+                Fichier analysé : ./logs/exemple.log<br>
+                Date d'analyse : 2026-02-04 17:50:17<br>
+                Nombre de ligne : 20<br>
+                <br>
+                --------------------------------------------------<br>
+                RÉSUMÉ GLOBAL<br>
+                --------------------------------------------------<br>
+                Lignes valides : 18<br>
+                Lignes invalides : 2<br>
+                <br>
+                Niveaux détectés :<br>
+                - INFO :  10<br>
+                - ERROR : 5<br>
+                - WARNING : 3<br>
+                <br>
+                Statut global: ATTENTION<br>
+                <br>
+                --------------------------------------------------<br>
+                DÉTAIL PAR NIVEAU<br>
+                --------------------------------------------------<br>
+                <br>
+                [WARNING]<br>
+                - 2026-01-28 08:12:07 WARNING Temps de réponse élevé sur la requête /api/users<br>
+                - 2026-01-28 08:12:25 WARNING Utilisation mémoire élevée (82%)<br>
+                - 2026-01-28 08:12:50 WARNING Tentative de connexion suspecte détectée<br>
+                <br>
+                [ERROR]<br>
+                - 2026-01-28 08:12:15 ERROR Impossible de charger le fichier de configuration<br>
+                - 2026-01-28 08:12:16 ERROR Échec de l'initialisation du module auth<br>
+                - 2026-01-28 08:12:35 ERROR Timeout lors de l'accès à la base de données<br>
+                - 2026-01-28 08:12:36 ERROR Timeout lors de l'accès à la base de données<br>
+                - 2026-01-28 08:13:10 ERROR Erreur inconnue<br>
+                <br>
+                --------------------------------------------------<br>
+                ANOMALIES DÉTECTÉES<br>
+                --------------------------------------------------<br>
+                Messages répété :<br>
+                - 2 fois :  ERROR Timeout lors de l'accès à la base de données<br>
+                <br>
+                Présence de lignes invalides<br>
+                - 'LIGNE_CORROMPUE_SANS_FORMAT'<br>
+                - '2026-01-29 00:01:13 ***xadadjj \n 8761868Z6 WARNING USer not detected'<br>
+                <br>
+                --------------------------------------------------<br>
+                CONCLUSION<br>
+                --------------------------------------------------<br>
+                Message signalant le besoin d'intervention suite a des erreurs et warning détectés .<br>
+                <br>
+                ==================================================<br>
+                FIN DU RAPPORT<br>
+                ==================================================<br>
+            </p>
+    </body>
+</html>

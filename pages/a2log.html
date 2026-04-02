@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOULAIN LUCAS</title>
+    <script>
+    (function () {
+        const theme = localStorage.getItem("theme");
+
+        if (theme === "light") {
+            document.documentElement.classList.add("light-mode");
+        } else {
+            document.documentElement.classList.add("dark-mode");
+        }
+    })();
+    </script>
+    <link rel="stylesheet" href="/static/style_second.css">
+</head>
+<body class="darkmode">
+    <header>
+        <nav>
+            <a href="../index.html"><li data-i18n="home"></li></a>
+            <li class="langBtn mobile">FR</li>
+            <button class="btnNav" id="theme-switch">
+                <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="20px"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M303.3 112.7C196.2 121.2 112 210.8 112 320C112 434.9 205.1 528 320 528C353.3 528 384.7 520.2 412.6 506.3C309.2 482.9 232 390.5 232 280C232 214.2 259.4 154.9 303.3 112.7zM64 320C64 178.6 178.6 64 320 64C339.4 64 358.4 66.2 376.7 70.3C386.6 72.5 394 80.8 395.2 90.8C396.4 100.8 391.2 110.6 382.1 115.2C321.5 145.4 280 207.9 280 280C280 381.6 362.4 464 464 464C469 464 473.9 463.8 478.8 463.4C488.9 462.6 498.4 468.2 502.6 477.5C506.8 486.8 504.6 497.6 497.3 504.6C451.3 548.8 388.8 576 320 576C178.6 576 64 461.4 64 320z"/></svg>
+                <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24" width="20px"><path d="M 11 0 L 11 3 L 13 3 L 13 0 L 11 0 z M 4.2226562 2.8085938 L 2.8085938 4.2226562 L 4.9296875 6.34375 L 6.34375 4.9296875 L 4.2226562 2.8085938 z M 19.777344 2.8085938 L 17.65625 4.9296875 L 19.070312 6.34375 L 21.191406 4.2226562 L 19.777344 2.8085938 z M 12 5 C 8.1458514 5 5 8.1458514 5 12 C 5 15.854149 8.1458514 19 12 19 C 15.854149 19 19 15.854149 19 12 C 19 8.1458514 15.854149 5 12 5 z M 12 7 C 14.773268 7 17 9.2267316 17 12 C 17 14.773268 14.773268 17 12 17 C 9.2267316 17 7 14.773268 7 12 C 7 9.2267316 9.2267316 7 12 7 z M 0 11 L 0 13 L 3 13 L 3 11 L 0 11 z M 21 11 L 21 13 L 24 13 L 24 11 L 21 11 z M 4.9296875 17.65625 L 2.8085938 19.777344 L 4.2226562 21.191406 L 6.34375 19.070312 L 4.9296875 17.65625 z M 19.070312 17.65625 L 17.65625 19.070312 L 19.777344 21.191406 L 21.191406 19.777344 L 19.070312 17.65625 z M 11 21 L 11 24 L 13 24 L 13 21 L 11 21 z"></path></svg>
+            </button>
+        </nav>
+    </header>
+
+    <section class="main">
+        <div class="core">
+            <div class="header">
+                <h1>A2Log<span style="color: var(--accent-color);">.py</span></h1>
+                <div class="card"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="30px"><path d="M535.8 264.5C528.1 233.6 513.5 210.3 482.4 210.3L442.3 210.3L442.3 257.7C442.3 294.5 411.1 325.5 375.5 325.5L268.7 325.5C239.5 325.5 215.3 350.5 215.3 379.8L215.3 481.6C215.3 510.6 240.5 527.6 268.7 535.9C302.5 545.8 335 547.6 375.5 535.9C402.4 528.1 428.9 512.4 428.9 481.6L428.9 440.9L322.2 440.9L322.2 427.3L482.4 427.3C513.5 427.3 525 405.6 535.8 373.1C547 339.6 546.5 307.4 535.8 264.5zM382.2 508.7C374.6 509.2 367.3 505.5 363.3 499C359.4 492.4 359.4 484.3 363.3 477.7C367.3 471.2 374.6 467.5 382.2 468C389.8 467.5 397.1 471.2 401.1 477.7C405 484.3 405 492.4 401.1 499C397.1 505.5 389.8 509.2 382.2 508.7zM263.8 312.1L370.6 312.1C400.3 312.1 424 287.6 424 257.8L424 155.9C424 126.9 399.6 105.2 370.6 100.3C334.8 94.4 295.9 94.7 263.8 100.4C218.6 108.4 210.4 125.1 210.4 156L210.4 196.7L317.3 196.7L317.3 210.3L170.3 210.3C139.2 210.3 112 229 103.5 264.5C93.7 305.2 93.3 330.6 103.5 373.1C111.1 404.7 129.2 427.3 160.3 427.3L197 427.3L197 378.5C197 343.2 227.5 312.1 263.8 312.1zM257.2 128.7C268.5 128.7 277.6 137.8 277.6 149.1C277.6 160.4 268.5 169.5 257.2 169.5C245.9 169.5 236.8 160.4 236.8 149.1C236.8 137.8 245.9 128.7 257.2 128.7z"/></svg></div>
+            </div>
+            <p data-i18n="projects" data-i18n-index="1"></p>
+            <div class="buttons">
+                <a  class="btnGit" target="_blank" href="https://github.com/loski554/AnalyzLog"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="15px"><path d="M598.6 342.6C611.1 330.1 611.1 309.8 598.6 297.3L470.6 169.3C458.1 156.8 437.8 156.8 425.3 169.3C412.8 181.8 412.8 202.1 425.3 214.6L498.7 288L64 288C46.3 288 32 302.3 32 320C32 337.7 46.3 352 64 352L498.7 352L425.3 425.4C412.8 437.9 412.8 458.2 425.3 470.7C437.8 483.2 458.1 483.2 470.6 470.7L598.6 342.7z"/></svg> Github page</a>
+                <div class="archived">
+                    <p data-i18n="archived"></p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="15px"><path d="M320 576C178.6 576 64 461.4 64 320C64 178.6 178.6 64 320 64C461.4 64 576 178.6 576 320C576 461.4 461.4 576 320 576zM320 112C205.1 112 112 205.1 112 320C112 434.9 205.1 528 320 528C434.9 528 528 434.9 528 320C528 205.1 434.9 112 320 112zM390.7 233.9C398.5 223.2 413.5 220.8 424.2 228.6C434.9 236.4 437.3 251.4 429.5 262.1L307.4 430.1C303.3 435.8 296.9 439.4 289.9 439.9C282.9 440.4 276 437.9 271.1 433L215.2 377.1C205.8 367.7 205.8 352.5 215.2 343.2C224.6 333.9 239.8 333.8 249.1 343.2L285.1 379.2L390.7 234z"/></svg>
+                </div>
+            </div>
+        </div>
+        <img src="../assets/img/screen3.png" alt="screen 2">
+        <div class="info">
+            <h2 data-i18n="wid"></h2>
+            <ul>
+                <li data-i18n="analyze_wid" data-i18n-index="0"></li>
+                <li data-i18n="analyze_wid" data-i18n-index="1"></li>
+                <li data-i18n="analyze_wid" data-i18n-index="2"></li>
+                <li data-i18n="analyze_wid" data-i18n-index="3"></li>
+                <li data-i18n="analyze_wid" data-i18n-index="4"></li>
+                <li data-i18n="analyze_wid" data-i18n-index="5"></li>
+            </ul>
+            <a class="btnReport" target="_blank" href="./report.html" data-i18n="report"></a>
+        </div>
+        <div class="resume">
+            <h1 data-i18n="proj_interest"></h1>
+            <div class="grp">
+                <span>2026-02-03</span>
+                <div class="time">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="18px"><path d="M528 320C528 434.9 434.9 528 320 528C205.1 528 112 434.9 112 320C112 205.1 205.1 112 320 112C434.9 112 528 205.1 528 320zM64 320C64 461.4 178.6 576 320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320zM296 184L296 320C296 328 300 335.5 306.7 340L402.7 404C413.7 411.4 428.6 408.4 436 397.3C443.4 386.2 440.4 371.4 429.3 364L344 307.2L344 184C344 170.7 333.3 160 320 160C306.7 160 296 170.7 296 184z"/></svg>
+                    <span style="color: var(--lang-color);">1 minute</span>
+                </div>
+            </div>
+            <p class="second_text"></p>
+            <p class="second_text"></p>
+        </div>
+    </section>
+    <script src="../js/theme_change.js"></script>
+    <script src="../js/lang_change.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+{
+    "home": "ACCUEIL",
+    "me": "Étudiant en informatique de 21ans, souhaitant me spécialiser en <i style='font-weight: 600;'>cybersécurité</i> avec une orientation vers les systèmes et réseaux.",
+    "about_p": "J'ai obtenu mon baccalauréat technologique, option SIN <i>(Systèmes d'Information et Numérique)</i>, en 2023 avec la mention Bien. À l'école, j'ai toujours eu des facilités, et ce depuis le début de ma scolarité jusqu'à l'obtention du baccalauréat. Malheureusement, cet avantage m'a aussi desservi : en arrivant dans l'enseignement supérieur, je n'avais pas encore acquis la maturité ni les méthodes de travail nécessaires pour réussir. J'ai d'abord pensé qu'il s'agissait d'une mauvaise orientation et j'ai exploré d'autres voies, mais le problème restait le même. <br><br> Ces trois dernières années m'ont permis de prendre du recul, de mieux me connaître et de comprendre l'origine de mes difficultés. Aujourd'hui, c'est avec davantage de maturité, de recul et de détermination que je souhaite construire un projet professionnel solide dans le domaine de l'informatique. Les erreurs, les doutes et les changements de parcours que j'ai connus m'ont finalement permis de grandir, de gagner en confiance et de clarifier mes objectifs.",
+    
+    "analyz_resume": "",
+    "csv_resume": "",
+    "todo_resume": "",
+
+    "archived": "archivé",
+    "stable": "stable (v1.0)",
+
+    "project": [
+        ">Projets",
+        "récemment",
+        "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 640' width='15px'><path d='M352 128C352 110.3 337.7 96 320 96C302.3 96 288 110.3 288 128L288 288L128 288C110.3 288 96 302.3 96 320C96 337.7 110.3 352 128 352L288 352L288 512C288 529.7 302.3 544 320 544C337.7 544 352 529.7 352 512L352 352L512 352C529.7 352 544 337.7 544 320C544 302.3 529.7 288 512 288L352 288L352 128z'/></svg>projets",
+        "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 640' width='15px'><path d='M96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320z'/></svg>projets"
+    ],
+    "projects": [
+        "Convertisseur de fichiers CSV vers JSON, avec analyse des données.", 
+        "Analyseur de fichiers log, avec rapport complet.",
+        "Application de gestion des tâches organisé en fonction des priorités.",
+        "Outil d'analyse réseau qui détecte les machines actives et les ports ouverts."
+    ],
+
+    "abouts": [
+        ">À propos de moi",
+        "parcours scolaire"
+    ],
+
+    "wid": "Fonctionnalités",
+    "proj_interest": ">Intérêt du projet",
+
+    "CSV_wid": [
+    "lire un fichier CSV,",
+    "valider les données selon un schéma défini (utilisateur, âge, email),",
+    "exporter les données valides au format JSON dans un nouveau fichier,",
+    "afficher un tableau des utilisateurs valides dans une interface graphique."
+    ],
+    "csv_proj": "Ceci est mon premier petit projet en Python et il n’a pas pour but de démontrer des compétences avancées dans ce langage. Néanmoins, j’ai cherché à construire un projet structuré, clair et professionnel. Il s’agit d’un projet complet comprenant une interface graphique (ttkbootstrap avec Tkinter), des modules externes comme argparse et logging, ainsi qu’une structure modulaire permettant une meilleure testabilité. À travers ce projet, je souhaite avant tout mettre en avant ma rigueur, ma capacité à travailler de manière autonome et mon sérieux dans la réalisation d’un outil propre et exploitable.",
+
+    "network_wid": [
+        "détection automatique du réseau local (IP + masque)",
+        "scan des machines actives (ping)",
+        "scan des ports TCP principaux",
+        "résolution du nom d’hôte",
+        "banner grabbing (identification des services et des versions)",
+        "multithreading pour accélérer le scan",
+        "export des résultats en JSON",
+        "système de logs"
+    ],
+    "network_proj": "Ce projet m’a permis de faire mes premiers pas dans la programmation réseau. J’utilise Python depuis maintenant plusieurs mois et, à travers ce scanner réseau, j’ai pu approfondir ma compréhension de protocoles essentiels comme TCP (Transmission Control Protocol) et IP (Internet Protocol). Grâce au module socket de Python, qui permet d’établir des communications réseau bas niveau, il est possible de créer des connexions, d’envoyer des requêtes et de récupérer des informations sur les machines du réseau local. Cela m’a notamment permis de mettre en place des fonctionnalités comme la découverte d’hôtes actifs et le scan de ports.<br><br>Ce projet m’a beaucoup appris sur le fonctionnement des réseaux, notamment l’adressage IP et la communication entre les machines. Comme à mon habitude, l’objectif n’était pas de créer un projet particulièrement complexe, mais plutôt de concevoir un projet propre, bien structuré et correctement documenté, avec des bases solides.",
+
+    "analyze_wid": [
+        "lire et valider un fichier .log",
+        "analyser les niveaux de logs : INFO, WARNING, ERROR",
+        "détecter les lignes invalides ou corrompues",
+        "analyser l’état global du service",
+        "détecter les erreurs et avertissements récurrents",
+        "générer automatiquement un rapport texte structuré"
+    ],
+    "report": ":rapport <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 640' width='15px'><path d='M439.1 297.4C451.6 309.9 451.6 330.2 439.1 342.7L279.1 502.7C266.6 515.2 246.3 515.2 233.8 502.7C221.3 490.2 221.3 469.9 233.8 457.4L371.2 320L233.9 182.6C221.4 170.1 221.4 149.8 233.9 137.3C246.4 124.8 266.7 124.8 279.2 137.3L439.2 297.3z'/></svg>",
+    "": ""
+
+}

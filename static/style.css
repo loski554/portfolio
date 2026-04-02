@@ -1,0 +1,341 @@
+/* FONTS IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap');
+
+@font-face {
+    font-family: 'Menlo';
+    src: url(fonts/Menlo-Regular.ttf);
+}
+
+/* BASIC SETTINGS */
+:root {
+    --base-color: #0a0b0d;
+    --base-variant: #27272a;
+    --text-color: #eaeaea;
+    --second-text: #ffffffb1;
+    --primary-color: #165ffc29;
+    --accent-color: #165DFC;
+    /* --primary-color: #63cd0026;
+    --accent-color: #66d300; */
+    --lang-bg: #27272a;
+    --lang-color: #717171;
+}
+.light-mode {
+    --base-color: #FFF;
+    --base-variant: #9797978f;
+    --text-color: #0a0b0d;
+    --second-text: #0a0a0ab6;
+    --primary-color: #165ffc29;
+    --accent-color: #165DFC;
+    /* --primary-color: #63cd0026;
+    --accent-color: #63cd00; */
+    --lang-bg: #c8c8c8;
+    --lang-color: #484848;
+}
+
+::selection {
+    background: var(--primary-color);
+    color: var(--second-text);
+}
+.light-mode ::selection { 
+    background: var(--primary-color);
+    color: var(--second-text)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-color: var(--primary-color) transparent;
+    scrollbar-width: auto;
+    accent-color: var(--accent-color);
+}
+/* barre */
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 0;
+}
+/* hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
+
+body {
+    position: relative;
+    font-family: 'geist Mono', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: var(--base-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* THEME SWITCH BUTTON */
+#theme-switch svg {
+    fill: var(--text-color);
+}
+.icon-sun {
+  display: none;
+}
+
+.dark-mode .icon-moon {
+  display: none;
+}
+
+.dark-mode .icon-sun {
+  display: inline;
+}
+
+/* HEADER */
+header {
+    margin-top: 10px;
+    position: fixed;
+    font-family: 'Menlo', sans-serif;
+    display: flex;
+    width: fit-content;
+    height: 3rem;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    background: (var(--base-variant));
+    border-radius: 50px;
+    padding: 0 1.5rem;
+    /*border-bottom: 1px solid var(--accent-color);*/
+    z-index: 10;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+nav li {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6rem;
+    height: 100%;
+    transition: all 0.4s ease-out;
+}
+nav button.btnNav {
+    font-family: 'Menlo';
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6rem;
+    height: 100%;
+    transition: all 0.4s ease-out;
+    background: none;
+    color: var(--text-color);
+    font-size: 1rem ;
+}
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+/* SECTION MAIN */
+section.main {
+    display: flex;
+    flex-direction: column; 
+    display: flex;
+    width: auto;
+    border-top: 3px solid var(--accent-color);
+    padding: 20px;
+    margin: 8rem 1rem 2rem 1rem;
+    max-width: 50rem;
+    padding-top: 2rem;
+    gap: 3.5rem;
+}
+.main span {
+    color: var(--accent-color);
+}
+.main span.code{
+    border: 1px solid var(--accent-color);
+    text-transform: uppercase;
+    padding: 3px 5px;
+    color: var(--accent-color);
+    margin: 3px 0;
+    opacity: 70%;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+.main .middle svg {
+    fill: var(--accent-color);
+}
+.main p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* DIV INFO */
+.info {
+    text-align: justify;
+}
+.info h1 {
+    font-size: 2.5rem;
+}
+.top {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.top .social {
+    display: flex;
+    gap: 5px;
+}
+.top .social .card {
+    cursor: pointer;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+    background: var(--primary-color);
+    border-radius: 5px;
+    fill: var(--accent-color);
+    transition: all 0.3s ease-out;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+.social a {
+    border-radius: 5px;
+}
+.middle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.8rem;
+    gap: 3px;
+}
+.bottom p {
+    color: var(--second-text);
+}
+
+/* DIV PROJECTS */
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.projects h1,
+.about h1 {
+    align-self: start;
+    padding: 2px 5px;
+    background: var(--primary-color);
+    font-family: 'Menlo';
+    font-size: 1.5rem;
+}
+.project-card {
+    display: flex;
+    padding: 20px;
+    border: 1px solid var(--base-variant);
+    border-radius: 5px;
+    transform: translateY(0);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.project-card.hidden {
+    display: none;
+}
+.project-card.showing {
+    opacity: 0;
+    transform: translateY(20px);
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    align-items: start;
+    width: 100%;
+    gap: 5px;
+    fill: var(--text-color);
+}
+.project-card .text p {
+    color: var(--second-text);
+}
+a.show:hover {
+    transition: all 0.2s ease-out;
+    fill: var(--base-variant);
+}
+
+button.btnProjects {
+    font-family: 'Open Sans';
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    align-self: self-start;
+    font-size: 1rem;
+    border: none;
+    color: var(--base-color);
+    background: var(--accent-color);
+    padding: 5px;
+    fill: var(--base-color);
+}
+button.btnProjects.less {
+    display: none;
+}
+
+/* SECTION ABOUT */
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: justify;
+}
+.grp {
+    display: flex;
+    justify-content: space-between;
+}
+.time {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    fill: var(--lang-color);
+}
+
+.second_text {
+    color: var(--second-text);
+}
+
+
+/*PARTIE RESPONSIVE*/
+
+/*EN DESSOUS DE 1400px*/
+@media (max-width: 1400px) {
+}
+
+/*EN DESSOUS DE 1024px*/
+@media (max-width: 1024px) {
+}
+
+/*EN DESSOUS DE 576px*/
+@media (max-width: 576px) {
+    nav li,
+    nav button.btnNav {width: 5rem;}
+    section.main {margin: 5rem 0 2rem 0;}
+    .social {margin-bottom: 0.9rem;}
+    .top.info h1 {font-size: 2.3rem;}
+    .bottom p {font-size: 1.2rem;}
+    .text p {font-size: 1rem;}
+    .top.info{
+    display: flex;
+    margin-bottom: 2rem;
+    gap: 12px;
+    flex-direction: column-reverse;
+    }
+    .about p {font-size: 1.1rem;}
+}

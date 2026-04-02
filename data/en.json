@@ -1,0 +1,66 @@
+{
+    "home": "HOME",
+    "me": "I’m a 21 years old computer science student, aiming to specialize in <i style='font-weight: 600;'>cybersecurity</i> with a focus on systems and networks.",
+    "about_p": "I graduated with a technological baccalaureate in 2023, specializing in SIN <i>(Digital Information Systems)</i>, with honors. Throughout school, I always found learning relatively easy, from my early years up to my baccalaureate. Unfortunately, this advantage also worked against me. When I entered higher education, I did not yet have the maturity or the work habits required to succeed. At first, I thought I had chosen the wrong path and tried different directions, but I eventually realized that the issue was not my field of study. <br><br> Over the past three years, I have taken the time to reflect, understand myself better, and identify the reasons behind my difficulties. Today, with greater maturity, perspective, and determination, I am ready to build a solid professional project in computer science. The mistakes, doubts, and changes I experienced have ultimately made me stronger, more confident, and clearer about my goals.",
+    
+    "analyz_resume": "",
+    "csv_resume": "",
+    "todo_resume": "",
+
+    "archived": "archived",
+    "stable": "stable (v1.0)",
+
+    "project": [
+        ">Projects",
+        "recently",
+        "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 640' width='15px'><path d='M352 128C352 110.3 337.7 96 320 96C302.3 96 288 110.3 288 128L288 288L128 288C110.3 288 96 302.3 96 320C96 337.7 110.3 352 128 352L288 352L288 512C288 529.7 302.3 544 320 544C337.7 544 352 529.7 352 512L352 352L512 352C529.7 352 544 337.7 544 320C544 302.3 529.7 288 512 288L352 288L352 128z'/></svg>projects",
+        "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 640' width='15px'><path d='M96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320z'/></svg>projects"
+    ],
+    "projects": [
+        "Csv to json file converter, with data analysis.", 
+        "Log file analyzer, with full report.",
+        "To-do application that manages tasks based on priorities.",
+        "Network scanning tool that detects active hosts and open ports."
+    ],
+
+    "abouts": [
+        ">About me",
+        "career guidance"
+    ],
+
+    "wid": "What it does",
+    "proj_interest": ">Project interest",
+
+    "CSV_wid": [
+        "read a CSV file,",
+        "validate data according to a given structure (user, age, email),",
+        "export valid data in JSON format to a new file,",
+        "display a table of valid users in a graphical interface."
+    ],
+    
+    "csv_proj": "This is my first small project in Python, and it is not intended to demonstrate advanced skills in the language. However, I aimed to build a structured, clear, and professional project. It is a complete project that includes a graphical interface (ttkbootstrap with Tkinter), external modules such as argparse and logging, and a modular structure that allows for better testability. Through this project, I mainly want to highlight my rigor, my ability to work independently, and my seriousness in creating a clean and usable tool.",
+
+    "network_wid": [
+        "automatic detection of the local network (IP + subnet mask)",
+        "active host scanning (ping)",
+        "scanning of common TCP ports",
+        "hostname resolution",
+        "banner grabbing (service and version identification)",
+        "multithreading to speed up scanning",
+        "export of results in JSON format",
+        "logging system"
+    ],
+    "network_proj": "This project allowed me to take my first steps into network programming. I have been using Python for several months, and through this network scanner I learned a great deal about key protocols such as TCP (Transmission Control Protocol) and IP (Internet Protocol). Using Python’s socket module, which enables low-level network communication, it is possible to establish connections, send requests, and retrieve information from devices on a local network. This made it possible to implement features such as host discovery and port scanning.<br><br>This project significantly improved my understanding of how networks operate, including IP addressing and communication between machines. As with my other projects, the goal here was not to build something highly complex, but rather to create a clean, well-structured, and well-documented project with solid fundamentals.",
+
+    "analyze_wid": [
+        "read and validate a .log file",
+        "analyze log levels: INFO, WARNING, ERROR",
+        "detect invalid or corrupted lines",
+        "analyze the overall status of the service",
+        "detect recurring errors and warnings",
+        "automatically generate a structured text report"
+    ],
+    "report": ":report <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 640' width='15px'><path d='M439.1 297.4C451.6 309.9 451.6 330.2 439.1 342.7L279.1 502.7C266.6 515.2 246.3 515.2 233.8 502.7C221.3 490.2 221.3 469.9 233.8 457.4L371.2 320L233.9 182.6C221.4 170.1 221.4 149.8 233.9 137.3C246.4 124.8 266.7 124.8 279.2 137.3L439.2 297.3z'/></svg>",
+    "": ""
+
+}
