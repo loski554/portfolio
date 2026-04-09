@@ -254,6 +254,9 @@ section.main {
     opacity: 0;
     transform: translateY(20px);
 }
+.grp {
+    gap: 5px;
+}
 .text {
     display: flex;
     flex-direction: column;

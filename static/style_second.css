@@ -177,9 +177,15 @@ img {
 .header {
     display: flex;
     justify-content: space-between;
+    gap: 5px;
     border-radius: 5px;
     align-items: center;
     margin-bottom: 1rem;
+    width: 100%;
+}
+.cards {
+    display: flex;
+    gap: 5px;
 }
 .header .card {
     display: flex;
@@ -204,6 +210,7 @@ img {
 }
 .buttons {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 10px;
     margin-top: 1rem;
