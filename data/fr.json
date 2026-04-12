@@ -61,6 +61,7 @@
         "détecter les erreurs et avertissements récurrents",
         "générer automatiquement un rapport texte structuré"
     ],
+    "a2log_proj": "Ce projet m'a permis de développer mes compétences en organisation des données, en structuration et en gestion des erreurs. J'ai appris à identifier des récurrences et à analyser des ensembles de données afin d'en extraire les informations clés. J'ai travaillé avec des listes, des dictionnaires et de nombreuses logiques pour traiter les logs de la manière la plus efficace possible. Ce projet repose principalement sur la manipulation de données et l'optimisation des fonctions afin d'éviter un code redondant.",
     "report": ":rapport <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 640' width='15px'><path d='M439.1 297.4C451.6 309.9 451.6 330.2 439.1 342.7L279.1 502.7C266.6 515.2 246.3 515.2 233.8 502.7C221.3 490.2 221.3 469.9 233.8 457.4L371.2 320L233.9 182.6C221.4 170.1 221.4 149.8 233.9 137.3C246.4 124.8 266.7 124.8 279.2 137.3L439.2 297.3z'/></svg>",
     
     "jungo_wid": [
