@@ -34,10 +34,10 @@
     "proj_interest": ">Intérêt du projet",
 
     "CSV_wid": [
-    "lire un fichier CSV,",
-    "valider les données selon un schéma défini (utilisateur, âge, email),",
-    "exporter les données valides au format JSON dans un nouveau fichier,",
-    "afficher un tableau des utilisateurs valides dans une interface graphique."
+        "lire un fichier CSV,",
+        "valider les données selon un schéma défini (utilisateur, âge, email),",
+        "exporter les données valides au format JSON dans un nouveau fichier,",
+        "afficher un tableau des utilisateurs valides dans une interface graphique."
     ],
     "csv_proj": "Ceci est mon premier petit projet en Python et il n’a pas pour but de démontrer des compétences avancées dans ce langage. Néanmoins, j’ai cherché à construire un projet structuré, clair et professionnel. Il s’agit d’un projet complet comprenant une interface graphique (ttkbootstrap avec Tkinter), des modules externes comme argparse et logging, ainsi qu’une structure modulaire permettant une meilleure testabilité. À travers ce projet, je souhaite avant tout mettre en avant ma rigueur, ma capacité à travailler de manière autonome et mon sérieux dans la réalisation d’un outil propre et exploitable.",
 
@@ -65,13 +65,13 @@
     "report": ":rapport <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 640' width='15px'><path d='M439.1 297.4C451.6 309.9 451.6 330.2 439.1 342.7L279.1 502.7C266.6 515.2 246.3 515.2 233.8 502.7C221.3 490.2 221.3 469.9 233.8 457.4L371.2 320L233.9 182.6C221.4 170.1 221.4 149.8 233.9 137.3C246.4 124.8 266.7 124.8 279.2 137.3L439.2 297.3z'/></svg>",
     
     "jungo_wid": [
-    "commandes de modération classiques",
-    "gestion des warns : historique en base de données, sanctions automatiques progressives",
-    "configuration d'un channel de logs par serveur",
-    "attribution automatique d'un rôle à l'arrivée d'un membre",
-    "logs serveur automatiques (arrivées, départs, actions de modération)",
-    "commande /userinfo avec profil complet d'un membre",
-    "rechargement des modules cog sans redémarrer le bot (/reload)"
-]
-
+        "commandes de modération classiques",
+        "gestion des warns : historique en base de données, sanctions automatiques progressives",
+        "configuration d'un channel de logs par serveur",
+        "attribution automatique d'un rôle à l'arrivée d'un membre",
+        "logs serveur automatiques (arrivées, départs, actions de modération)",
+        "commande /userinfo avec profil complet d'un membre",
+        "rechargement des modules cog sans redémarrer le bot (/reload)",
+        "système de tickets IT avec formulaire modal (anonyme ou nominatif)"
+    ]
 }
