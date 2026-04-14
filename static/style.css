@@ -337,7 +337,7 @@ button.btnProjects.less {
 
 /*EN DESSOUS DE 576px*/
 @media (max-width: 576px) {
-    section.main {margin: 7rem 0 2rem 0; padding-top: 1rem;}
+    section.main {margin: 4rem 0 2rem 0; padding-top: 1rem;}
     .info {margin-top: 1rem;}
     .social {margin-bottom: 0.9rem;}
     .top.info h1 {font-size: 2.3rem;}

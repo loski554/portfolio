@@ -30,11 +30,6 @@
     --lang-color: #717171;
 }
 
-::selection {
-    background: var(--primary-color);
-    color: var(--second-text);
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -340,7 +335,7 @@ a.btnReport {
 
 /*EN DESSOUS DE 576px*/
 @media (max-width: 576px) {
-    section.main {margin: 7rem 0 2rem 0;}
+    section.main {margin: 4rem 0 2rem 0;}
     .header.large {flex-direction: column-reverse; gap: 1rem;}
     .info li {font-size: 1.1rem;}
     .resume p {font-size: 1.1rem;}
