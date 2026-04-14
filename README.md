@@ -2,6 +2,8 @@
  - essential information about me
  - some projects
 
+loski554.github.io/portfolio
+
 ## Stacks
 - HTML 5 & CSS
 - JS
