@@ -1,5 +1,5 @@
 /* FONTS IMPORT */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap');
 
@@ -159,6 +159,7 @@ section.main {
     color: var(--accent-color);
 }
 .main p {
+    font-family: 'Inter';
     font-size: 1.2rem;
     font-weight: 500;
 }
@@ -229,7 +230,6 @@ section.main {
 /*Button in progress*/
 .in_prog {
     height: 100%;
-    font-family: 'Figtree';
     display: flex;
     align-items: center;
     gap: 5px;
@@ -239,6 +239,7 @@ section.main {
     fill: rgb(232, 182, 0);
 }
 .in_prog p {
+    font-family: 'Figtree';
     position: relative;
     top: -1px;
     color: rgb(232, 182, 0);
@@ -248,7 +249,6 @@ section.main {
 /*Button archived*/
 .archived {
     height: 100%;
-    font-family: 'Figtree';
     display: flex;
     align-items: center;
     gap: 5px;
@@ -258,6 +258,7 @@ section.main {
     fill: rgb(0, 196, 0);
 }
 .archived p {
+    font-family: 'Figtree';
     position: relative;
     top: -1px;
     color: rgb(0, 196, 0);
@@ -274,6 +275,7 @@ section.main {
     gap: 10px;
 }
 ul li {
+    font-family: 'Inter';
     font-size: 1.2rem;
     margin-left: 20px;
     color: var(--second-text);
@@ -319,6 +321,7 @@ a.btnReport {
 }
 
 .second_text {
+    text-align: justify;
     color: var(--second-text);
 }
 
