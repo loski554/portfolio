@@ -1,9 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  const isMobile =
-    FORCE_MOBILE || window.matchMedia("(hover: none)").matches;
+  const isMobile = window.matchMedia("(hover: none)").matches;
 
-  // 💻 si PC → on arrête tout
   if (!isMobile) return;
 
   const cards = document.querySelectorAll(".project-card");
