@@ -1,4 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
+
+  const isMobile =
+    FORCE_MOBILE || window.matchMedia("(hover: none)").matches;
+
+  // 💻 si PC → on arrête tout
+  if (!isMobile) return;
+
   const cards = document.querySelectorAll(".project-card");
 
   function updateActiveCard() {
@@ -20,8 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-    // 🔥 seuil important : si trop loin du centre → rien n'est actif
-    const activationThreshold = 120; // px (ajuste si besoin)
+    const activationThreshold = 120;
 
     cards.forEach((card) => card.classList.remove("active-hover"));
 
