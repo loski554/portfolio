@@ -282,7 +282,7 @@ ul li::marker {
 .resume {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 1.5rem;
     margin-top: 2.5rem;
 }
 .resume h1 {
@@ -311,10 +311,12 @@ a.btnReport {
     display: flex;
     align-items: center;
     gap: 3px;
-    fill: var(--accent-color);
-    background: var(--primary-color);
-    padding: 2px 4px;
-    border-radius: 4px;
+    fill: var(--second-text);
+    background: #a1a1a11e;
+    padding: 4px 8px;
+}
+.time span {
+    color: var(--second-text);
 }
 
 .second_text {

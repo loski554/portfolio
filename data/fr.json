@@ -33,7 +33,7 @@
 
     "abouts": [
         "À propos de moi",
-        "parcours scolaire"
+        "pourquoi moi ?"
     ],
 
     "wid": "Fonctionnalités",
@@ -79,5 +79,7 @@
         "commande /userinfo avec profil complet d'un membre",
         "rechargement des modules cog sans redémarrer le bot (/reload)",
         "système de tickets IT avec formulaire modal (anonyme ou nominatif)"
-    ]
+    ],
+
+    "cs": "<i>bientôt disponible</i>"
 }

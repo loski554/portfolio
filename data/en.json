@@ -13,7 +13,7 @@
     "in_prog": "in progress",
 
     "stacks": "Tech Stack & Tools",
-    "tools": "tools",
+    "tools": "tools :",
     "prog_lang": "languages :",
     "sys": "systems :",
 
@@ -33,7 +33,7 @@
 
     "abouts": [
         "About me",
-        "career guidance"
+        "why me ?"
     ],
 
     "wid": "What it does",
@@ -80,5 +80,7 @@
         "/userinfo command with full member profile",
         "cog module reload without restarting the bot (/reload)",
         "IT ticket system with modal form (anonymous or nominative)"
-    ]
+    ],
+
+    "cs": "<i>coming soon</i>"
 }
