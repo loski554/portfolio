@@ -281,7 +281,7 @@ section.main.certif {
 
 /* SECTION INFO */
 .info {
-    border: 1px solid var(--base-variant);
+    border: 2px solid var(--base-variant);
     border-radius: 5px;
     padding: 20px;
     display: flex;
