@@ -82,5 +82,7 @@
         "IT ticket system with modal form (anonymous or nominative)"
     ],
 
-    "cs": "<i>coming soon</i>"
+    "cs": "<i>coming soon</i>",
+
+    "pre_sec_p": "The Pre Security certification from TryHackMe allowed me to acquire essential foundations in cybersecurity and IT, including networking, operating systems, web technologies, IP addressing, DNS, and core security principles. It represents my first concrete step into cybersecurity through hands-on exercises and simulated environments."
 }

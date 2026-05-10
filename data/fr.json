@@ -81,5 +81,7 @@
         "système de tickets IT avec formulaire modal (anonyme ou nominatif)"
     ],
 
-    "cs": "<i>bientôt disponible</i>"
+    "cs": "<i>bientôt disponible</i>",
+
+    "pre_sec_p": "La certification Pre Security de TryHackMe m’a permis d’acquérir les bases essentielles de la cybersécurité et de l’informatique : fonctionnement des réseaux, systèmes, web, adresses IP, DNS et principes fondamentaux de la sécurité informatique. Elle représente ma première étape concrète dans l’apprentissage de la cybersécurité à travers des exercices pratiques et des environnements simulés."
 }

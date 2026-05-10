@@ -13,20 +13,31 @@
     --base-variant: #9797978f;
     --text-color: #00040c;
     --second-text: #0a0a0ab6;
+
     --primary-color: #165ffc29;
     --accent-color: #165DFC;
+
     --lang-bg: #c8c8c8;
     --lang-color: #484848;
+
+    --green-color: #54b802;
+    --second-green: #54b802;
+    --variant-green: #54b80234;
 }
 .dark-mode {
     --base-color: #00040c;
     --base-variant: #27272a;
     --text-color: #eaeaea;
     --second-text: #99a1af;
+
     --primary-color: #165ffc29;
     --accent-color: #165DFC;
+
     --lang-bg: #27272a;
     --lang-color: #717171;
+
+    --green-color: #71fc00;
+    --second-green: #71fc005e;
 }
 
 ::selection {
@@ -98,7 +109,7 @@ nav {
     justify-content: end;
     gap: 15px;
 }
-nav a {
+nav .grp {
     margin-right: auto;
 }
 nav li {
@@ -156,6 +167,13 @@ section.main {
     margin-top: 10px;
     font-size: 0.9rem;
     transform: scaleY(0.9);
+}
+.main span.code.green {
+    font-family: 'geist Mono';
+    width: fit-content;
+    margin-top: 5px;
+    color: var(--green-color);
+    background: var(--variant-green);
 }
 .main .middle svg {
     fill: var(--accent-color);
@@ -268,7 +286,7 @@ h4 {
 .project-card {
     display: flex;
     padding: 20px;
-    border: 1px solid var(--base-variant);
+    border: 2px solid var(--base-variant);
     border-radius: 5px;
     transform: translateY(0);
     transition: opacity 0.8s ease, transform 0.3s ease;
@@ -279,7 +297,7 @@ h4 {
     }
 .project-card:hover {
     transform: translate(0, -3px);
-    border: 1px solid var(--accent-color);
+    border: 2px solid var(--accent-color);
     box-shadow: 0px 3px 5px #00000025;
     svg {
         fill: var(--accent-color);
@@ -293,7 +311,7 @@ h4 {
 }
 .project-card.active-hover {
     transform: translate(0, -3px);
-    border: 1px solid var(--accent-color);
+    border: 2px solid var(--accent-color);
     box-shadow: 0px 3px 5px #00000025;
     svg {
         fill: var(--accent-color);
@@ -314,7 +332,7 @@ h4 {
     transform: translateY(20px);
 }
 .grp {
-    gap: 5px;
+    gap: 15px;
 }
 .text {
     display: flex;
@@ -380,6 +398,65 @@ button.btnProjects.less {
 
 .second_text {
     color: var(--second-text);
+}
+
+/*CETIF SECTION*/
+.certif h1 {
+    align-self: start;
+    width: fit-content;
+    padding: 2px 5px;
+    background: var(--variant-green);
+    font-family: 'Menlo';
+    font-size: 1.5rem;
+}
+.certif {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.thm-container {
+    font-family: 'Inter';
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem;
+    border: 2px solid var(--base-variant);
+    border-radius: 5px;
+    fill: var(--base-variant);
+    transition: opacity 0.8s ease, transform 0.3s ease;
+}
+.thm-container .show svg {
+    transform: rotate(90deg);
+}
+.thm-container:hover {
+    transform: translate(0, -3px);
+    border: 2px solid  var(--second-green);
+    box-shadow: 0px 3px 5px #00000025;
+    .show svg {
+        fill: var(--green-color);
+        transform: rotate(-1deg);
+        transition: 0.4s ease-out;
+        &:hover {
+            transform: scale(0.9);
+        }
+    }
+    
+}
+.thm-container p {
+    color: var(--second-text);
+    text-transform: lowercase;
+    font-style: italic;
+    font-size: 0.95rem;
+}
+.thm-container h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: flex;
+    font-family: 'geist Mono';
+    color: var(--text-color);
+}
+.thm-container h2 svg {
+    fill: var(--green-color);
 }
 
 

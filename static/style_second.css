@@ -14,20 +14,31 @@
     --base-variant: #9797978f;
     --text-color: #00040c;
     --second-text: #0a0a0ab6;
+
     --primary-color: #165ffc29;
     --accent-color: #165DFC;
+
     --lang-bg: #c8c8c8;
     --lang-color: #484848;
+
+    --green-color: #54b802;
+    --second-green: #54b802;
+    --variant-green: #54b80234;
 }
 .dark-mode {
     --base-color: #00040c;
     --base-variant: #27272a;
     --text-color: #eaeaea;
     --second-text: #99a1af;
+
     --primary-color: #165ffc29;
     --accent-color: #165DFC;
+
     --lang-bg: #27272a;
     --lang-color: #717171;
+
+    --green-color: #71fc00;
+    --second-green: #71fc005e;
 }
 
 * {
@@ -86,6 +97,11 @@ header {
     /*border-bottom: 1px solid var(--accent-color);*/
     z-index: 10;
 }
+.grp-header {
+    display: flex;
+    gap: 15px;
+    margin-right: auto;
+}
 nav {
     display: flex;
     height: 100%;
@@ -137,6 +153,10 @@ section.main {
     max-width: 50rem;
     padding-top: 2rem;
     gap: 3.5rem;
+}
+section.main.certif {
+    border-top: none;
+    margin: 3rem 1rem 2rem 1rem;
 }
 
 .main span {
@@ -285,12 +305,21 @@ ul li::marker {
     gap: 1.5rem;
     margin-top: 2.5rem;
 }
+.resume img {
+    margin-top: 1rem;
+    align-self: center;
+    max-width: 35rem;
+}
 .resume h1 {
+    display: flex;
     align-self: start;
     padding: 2px 5px;
     background: var(--primary-color);
     font-family: 'Menlo';
     font-size: 1.5rem;
+}
+.resume h1.green {
+    background: var(--variant-green);
 }
 a.btnReport {
     font-weight: 600;
@@ -307,6 +336,7 @@ a.btnReport {
     display: flex;
     justify-content: space-between;
 }
+
 .time {
     display: flex;
     align-items: center;
@@ -319,11 +349,59 @@ a.btnReport {
     color: var(--second-text);
 }
 
-.second_text {
+p.second_text {
+    display: flex;
+    font-weight: 400;
     text-align: justify;
     color: var(--second-text);
+    fill: var(--second-text);
+    gap: 5px;
 }
 
+/*Certif pages*/
+.card-certif {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 1rem;
+    width: 100%;
+    border: 2px solid var(--base-variant);
+    border-radius: 5px;
+}
+.card-certif h2 {
+    display: flex;
+    font-size: 1.5rem;
+    fill: var(--green-color);
+}
+span.span-head {
+    font-family: 'Inter';
+    color: var(--second-text);
+    font-size: 0.95rem;
+    font-style: italic;
+}
+.tags {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.tag {
+    border-radius: 5px;
+    padding: 3px 5px;
+}
+.tag.green {
+    color: var(--green-color);
+    background-color: var(--variant-green);
+    opacity: 70%;
+}
+.tag.grey {
+    color: var(--second-text);
+    background-color: #a1a1a11e;
+}
+.tag.blue {
+    color: var(--accent-color);
+    background-color: var(--primary-color);
+}
 
 /*PARTIE RESPONSIVE*/
 
@@ -337,7 +415,8 @@ a.btnReport {
 
 /*EN DESSOUS DE 576px*/
 @media (max-width: 576px) {
-    section.main {margin: 4rem 0 2rem 0;}
+    section.main,
+    section.main.certif {margin: 4rem 0 2rem 0; padding-top: 1rem; border-top: none;}
     .header.large {flex-direction: column-reverse; gap: 1rem;}
     .info li {font-size: 1.1rem;}
     .resume p {font-size: 1.1rem;}
